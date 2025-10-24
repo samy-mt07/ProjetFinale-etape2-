@@ -1,0 +1,33 @@
+{
+  "name": "user-manager",
+  "version": "1.0.0",
+  "description": "Serveur HTTP avec API RESR",
+  "keywords": [
+    "hettp",
+    "server",
+    "api",
+    "rest",
+    "mysql",
+    "sequelize"
+  ],
+  "license": "ISC",
+  "author": "samy",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mariadb": "^3.4.5",
+    "mysql2": "^3.15.1",
+    "node.js": "^0.0.1-security",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
