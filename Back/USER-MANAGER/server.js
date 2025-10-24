@@ -7,6 +7,9 @@ const server = express();
 // import pool
 const pool = require("./database/database");
 
+// import route 
+//const useRouter = require("./route/users"); 
+const useAuth = require('./route/authoRoutes')
 //importer module d' environement
 const dotenv = require("dotenv");
 
@@ -23,8 +26,10 @@ server.get('/',(req,res)=>{
 }); 
 
 // definir le chemin 
-const useRouter = require("./route/users");
-server.use("/users", useRouter);
+
+//server.use("/users", useRouter);
+
+server.use(useAuth);
 
 
 //ecoute

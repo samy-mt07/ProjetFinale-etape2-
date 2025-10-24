@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const pool = require("../database/database");
+const bcrypt = require('bcrypt'); 
 
 router.get("/:id", async (req, res) => {
   try {
@@ -16,10 +17,10 @@ router.get("/:id", async (req, res) => {
 router.post("/register", async (req, res) => {
   try {
     const { nom, email, password_hash } = req.body;
-
+    const encryptedPasswod = await bcrypt.hash(password_hash , 10);
     const sqlQuery =
       "INSERT INTO users (nom, email, password_hash) VALUES (?,?,?)";
-    const result = await pool.query(sqlQuery, [nom, email, password_hash]);
+    const result = await pool.query(sqlQuery, [nom, email, encryptedPasswod]);
     res.status(200).json({
       userId: result.insertId,
     });
