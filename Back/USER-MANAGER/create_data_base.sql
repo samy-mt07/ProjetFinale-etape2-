@@ -1,5 +1,5 @@
 -- Création de la base de données
-CREATE DATABASE IF NOT EXISTS librairie;
+CREATE DATABASE IF NOT EXISTS  ;
 USE librairie;
 
 -- 1. users

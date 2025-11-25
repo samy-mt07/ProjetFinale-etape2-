@@ -1,0 +1,20 @@
+/* Login.module.css */
+.cardForm {
+  max-width: 600px;       /* largeur de la carte */
+  margin: 100px auto;     /* centrage horizontal et vertical */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.cardForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardForm p {
+  text-align: center;
+  color: red;
+  margin-top: 15px;
+}
