@@ -1,7 +1,7 @@
 /* Login.module.css */
 .cardForm {
-  max-width: 600px;       /* largeur de la carte */
-  margin: 100px auto;     /* centrage horizontal et vertical */
+  max-width: 600px;       
+  margin: 100px auto;     
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
